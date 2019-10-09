@@ -40,7 +40,16 @@
 		} else {
 			throw new Exception("DB 입력오류");
 		}
-	}
+		
+	} else if(action.equals("list")) {
+		
+		// 단어장 조회결과
+		ArrayList<VocabularyDTO> vocabularyList = vocabularyDAO.getDBList();
+		
+		// List를 setAttribute
+		request.setAttribute("vocabularyList", vocabularyList);
+		pageContext.forward("vocabulary_list.jsp");
+	} 
 	
 	
 %> 
