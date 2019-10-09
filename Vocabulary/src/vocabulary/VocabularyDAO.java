@@ -53,7 +53,7 @@ public class VocabularyDAO {
 	 *	@author	권연준
 	 *	@date	2019-10-08
 	 
-	 *	@param 	prepareStatement
+	 *	@param 	action=list
 	 *
 	 *	@remark	웹 페이지를 불러오기 위한 초기페이지 설정 [2019-10-08; 권연준] \n
 	 *
@@ -103,7 +103,7 @@ public class VocabularyDAO {
 	 *	@author	권연준
 	 *	@date	2019-10-08
 	 
-	 *	@param 	prepareStatement
+	 *	@param 	action=add
 	 *
 	 *	@remark	폼에 입력된 값을 객체에 저장 [2019-10-08; 권연준] \n
 	 *
@@ -139,7 +139,7 @@ public class VocabularyDAO {
 	 *	@author	권연준
 	 *	@date	2019-10-08
 	 
-	 *	@param	prepareStatement
+	 *	@param	action=edit
 	 *
 	 *	@remark	where를 이용한 조건검색 후 출력 [2019-10-08; 권연준] \n
 	 *
@@ -177,7 +177,7 @@ public class VocabularyDAO {
 	 * @author 	권연준
 	 * @date 	2019-10-08
 	 *
-	 * @param 	prepareStatement
+	 * @param 	action=update
 	 *
 	 * @remark	where를 이용해 조건에 충족되는 데이터를 List에 저장 후 화면에 표시	[2019-10-08; 권연준] \n
 	 * 			update를 이용해 데이터 수정								[2019-10-08; 권연준] \n
@@ -212,7 +212,7 @@ public class VocabularyDAO {
 	 * @author 	권연준
 	 * @date 	2019-10-08
 	 *
-	 * @param 	prepareStatement
+	 * @param 	action=delete
 	 *
 	 * @remark	where를 이용한 데이터 조건삭제	[2019-10-08; 권연준] \n
 	 *
