@@ -29,7 +29,6 @@
 	
 		// 단어장 입력화면 오픈
 		pageContext.forward("vocabulary_view.jsp?action=add");
-	
 	} else if(action.equals("insert")) {
 		
 		// 단어장 입력
@@ -56,7 +55,17 @@
 		// edit를 setAttribute
 		request.setAttribute("vocabularyDTO", vocabularyDTO);
 		pageContext.forward("vocabulary_view.jsp?action=edit");
-	} 
+	} else if(action.equals("update")) {
+
+		// 단어장 수정
+		if(vocabularyDAO.updateDB(vocabularyDTO)) {
+
+			// 조회를 위하여 controll 호출
+			pageContext.forward("vocabulary_control.jsp?action=list");
+		} else {
+			throw new Exception("DB 수정오류");
+		}
+	}
 	
 	
 %> 
