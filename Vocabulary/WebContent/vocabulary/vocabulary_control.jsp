@@ -65,8 +65,16 @@
 		} else {
 			throw new Exception("DB 수정오류");
 		}
-	}
-	
-	
+	} else if(action.equals("delete")) {
+
+		// 단어장 삭제
+		if(vocabularyDAO.deleteDB(Integer.parseInt((String)request.getParameter("id")))) {
+
+			// 조회를 위하여 controll 호출
+			pageContext.forward("vocabulary_control.jsp?action=list");
+		} else {
+			throw new Exception("DB 삭제오류");
+		}
+	} 
 %> 
  
