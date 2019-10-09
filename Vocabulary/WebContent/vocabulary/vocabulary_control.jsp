@@ -40,51 +40,6 @@
 		} else {
 			throw new Exception("DB 입력오류");
 		}
-		
-	} else if(action.equals("list")) {
-		
-		// 단어장 조회결과
-		ArrayList<VocabularyDTO> vocabularyList = vocabularyDAO.getDBList();
-		
-		// List를 setAttribute
-		request.setAttribute("vocabularyList", vocabularyList);
-		pageContext.forward("vocabulary_list.jsp");
-	} else if(action.equals("edit")) {
-		
-		// edit용 1건을 select
-		vocabularyDTO = vocabularyDAO.getDB(Integer.parseInt((String)request.getParameter("id")));
-		
-		// edit를 setAttribute
-		request.setAttribute("vocabularyDTO", vocabularyDTO);
-		pageContext.forward("vocabulary_view.jsp?action=edit");
-		
-		
-	} else if(action.equals("update")) {
-
-		// 단어장 수정
-		if(vocabularyDAO.updateDB(vocabularyDTO)) {
-
-			// 조회를 위하여 controll 호출
-			pageContext.forward("vocabulary_control.jsp?action=list");
-		} else {
-			throw new Exception("DB 수정오류");
-		}
-		
-	} else if(action.equals("delete")) {
-
-		// 단어장 삭제
-		if(vocabularyDAO.deleteDB(Integer.parseInt((String)request.getParameter("id")))) {
-
-			// 조회를 위하여 controll 호출
-			pageContext.forward("vocabulary_control.jsp?action=list");
-		} else {
-			throw new Exception("DB 삭제오류");
-		}
-		
-	} else {
-		
-		out.println("<script>alert('action 파라미터를 확인해 주세요!!!')</script>");
-		
 	}
 	
 	
