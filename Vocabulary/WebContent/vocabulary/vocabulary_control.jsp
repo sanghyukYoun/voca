@@ -40,7 +40,6 @@
 		} else {
 			throw new Exception("DB 입력오류");
 		}
-		
 	} else if(action.equals("list")) {
 		
 		// 단어장 조회결과
@@ -49,6 +48,14 @@
 		// List를 setAttribute
 		request.setAttribute("vocabularyList", vocabularyList);
 		pageContext.forward("vocabulary_list.jsp");
+	} else if(action.equals("edit")) {
+		
+		// edit용 1건을 select
+		vocabularyDTO = vocabularyDAO.getDB(Integer.parseInt((String)request.getParameter("id")));
+		
+		// edit를 setAttribute
+		request.setAttribute("vocabularyDTO", vocabularyDTO);
+		pageContext.forward("vocabulary_view.jsp?action=edit");
 	} 
 	
 	
