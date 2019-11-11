@@ -2,9 +2,9 @@ package vocabulary;
 
 public class VocabularyDTO {
 
-	private int id; //¼ø¹ø
-	private String word; //´Ü¾î
-	private String description; //´Ü¾î¼³¸í
+	private int id; //ìˆœë²ˆ
+	private String word; //ë‹¨ì–´
+	private String description; //ë‹¨ì–´ì„¤ëª…
 	
 	public int getId() {
 		return id;
