@@ -106,7 +106,7 @@ public class vocaword {
   
   for(int j=0; j<count; j++){
    if(test[j]){ 
-    for(int i =0; i<5;i++) 
+    for(int i =0; i<3;i++) 
     JOptionPane.showInputDialog(korean[j]+" : "+text[j]); 
    }
   }
@@ -123,7 +123,8 @@ public class vocaword {
 	 
 	 *	@param 	count, got, save, gotword
 	 *
-	 *	@remark	 랜덤하게 단어를 뽑아내고, 이미 출제된 번호라면 다시 뽑고 중복 된게 아니면 출제 됬다고 표시 후 임시저장 [2019-10-24; 김설규] \n
+	 *	@remark	 랜덤하게 단어를 뽑아내고, 이미 출제된
+	 * 번호라면 다시 뽑고 중복 된게 아니면 출제 됬다고 표시 후 임시저장 [2019-10-24; 김설규] \n
 	 *
 	 */
  
