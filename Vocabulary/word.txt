@@ -1,0 +1,6 @@
+word	단어
+english	영어
+korea	한국
+mouse	쥐
+application	어플
+Exactly	구체적으로
