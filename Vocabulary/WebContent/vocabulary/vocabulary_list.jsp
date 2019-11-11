@@ -64,7 +64,10 @@
 	
 		<table border=1>
 			<tr>
-				<td colspan=6 align=right>
+				<td align=left>
+				<a href="vocaword.exe">단어 테스트<br> 프로그램 다운</a>
+				</td>
+				<td colspan=3 align=right width="200">
     				<input type="button" value="조회" onClick="retrivalcheck()">
 				</td>
 			</tr>
