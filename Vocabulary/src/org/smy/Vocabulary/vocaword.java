@@ -1,6 +1,8 @@
 package org.smy.Vocabulary;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -46,6 +48,8 @@ public class vocaword {
   
   try{
    FileInputStream ip = new FileInputStream("./word.txt");
+   InputStreamReader inputStreamReader = new InputStreamReader(ip, "UTF-8");
+   BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
    
    Scanner s = new Scanner(ip);
    
@@ -103,12 +107,11 @@ public class vocaword {
 	 *	@remark	j 문제 변수을 이용해 반복 count 변수를 이용해 틀린 문제 수 [2019-10-24; 김설규] \n
 	 *
 	 */
-  
   for(int j=0; j<count; j++){
-   if(test[j]){ 
-    for(int i =0; i<3;i++) 
-    JOptionPane.showInputDialog(korean[j]+" : "+text[j]); 
-   }
+	   if(test[j]){ 
+	    for(int i =0; i<3;i++) 
+	    JOptionPane.showInputDialog("틀린 단어 = " + korean[j]+" : "+text[j]); 
+	   }
   }
  }
  /**

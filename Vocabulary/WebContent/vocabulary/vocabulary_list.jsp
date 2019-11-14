@@ -64,15 +64,14 @@
 	
 		<table border=1>
 			<tr>
-				<td align=left>
-				<a href="vocaword.exe">단어 테스트<br> 프로그램 다운</a>
+				<td align=center>
+				<a href="vocaword.zip">단어 테스트<br> 프로그램 다운</a>
 				</td>
-				<td colspan=3 align=right width="200">
+				<td align=right width="200">
     				<input type="button" value="조회" onClick="retrivalcheck()">
 				</td>
 			</tr>
 			<tr>
-				<th>ID</th>
 				<th>단어</th>
 				<th>단어설명</th>
 			</tr>
@@ -82,8 +81,7 @@
 						for(VocabularyDTO vocabularyDTO : (ArrayList<VocabularyDTO>) vocabularyList) {
 			%>
 						<tr>
-							<td><a href="javascript:editcheck(<%=vocabularyDTO.getId() %>)"><%=vocabularyDTO.getId() %></a></td>
-							<td><%=vocabularyDTO.getWord() %></td>
+							<td><a href="javascript:editcheck(<%=vocabularyDTO.getId() %>)"><%=vocabularyDTO.getWord() %></a></td>
 							<td><%=vocabularyDTO.getDescription() %></td>
 						</tr>
 			<%	
