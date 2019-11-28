@@ -108,3 +108,25 @@
 				%>
 			</table>
 	</div>
+	
+	<div class="content">
+
+</div>
+
+
+<footer>
+
+
+  <div class="container footer-container">
+
+	<p class="footer-copyright">
+
+		COPYRIGHT@WordBook INC. ALL RIGHTS RESERVED.
+
+		</p>
+		
+</div>
+</footer>
+	
+	</body>
+	</html>

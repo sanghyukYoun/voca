@@ -41,7 +41,7 @@
 		// 데이터베이스 연결정보를 이용해 Connection 인스턴스 확보
 		conn = DriverManager.getConnection(jdbc_url,"voca","1234");
 
-		String sql = "select word_2, description_2 from vocabulary_english1";
+		String sql = "select word_2, description_2 from vocabulary_english2";
 
 		pstmt = conn.prepareStatement(sql);
 
@@ -108,3 +108,25 @@
 				%>
 			</table>
 	</div>
+	
+	<div class="content">
+
+</div>
+
+
+<footer>
+
+
+  <div class="container footer-container">
+
+	<p class="footer-copyright">
+
+		COPYRIGHT@WordBook INC. ALL RIGHTS RESERVED.
+
+		</p>
+		
+</div>
+</footer>
+	
+	</body>
+	</html>

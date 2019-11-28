@@ -94,6 +94,7 @@
 
 <footer>
 
+
   <div class="container footer-container">
 
 	<p class="footer-copyright">
@@ -102,9 +103,8 @@
 
 		</p>
 		
-</footer>
-
 </div>
+</footer>
 
 </body>
 

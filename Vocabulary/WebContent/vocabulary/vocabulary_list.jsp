@@ -140,13 +140,14 @@ input[type=button] {
 
 	<p class="footer-copyright">
 
-		COPYRIGHT@단어장 INC. ALL RIGHTS RESERVED.
+		COPYRIGHT@WordBook INC. ALL RIGHTS RESERVED.
 
 		</p>
 		
+</div>
 </footer>
 
-</div>
+
 </body>
 
 </html>

@@ -148,6 +148,7 @@ input[type=button] {
 
 <footer>
 
+
   <div class="container footer-container">
 
 	<p class="footer-copyright">
@@ -156,8 +157,8 @@ input[type=button] {
 
 		</p>
 		
+</div>
 </footer>
 
-</div>
 </body>
 </html>
