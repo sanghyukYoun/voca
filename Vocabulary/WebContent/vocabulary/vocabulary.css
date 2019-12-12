@@ -323,19 +323,6 @@ main {
 
 
 /* ========== Ǫ�� ========== */
-footer {
-	background: #fff;
-	font-size: 1.5rem;
-	color: #fff;
-	height: 20px;
-}
-.footer-container {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align:center;
-	color: black;
-	text-decoration: none;
-}
 
 /* button class */
 .page {
@@ -378,4 +365,32 @@ footer {
 
 .content {
     min-height: calc(100vh - 500px);
+}
+
+#menu1 {
+	background: #98E0AD;
+}
+
+#menu1 ul {
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#menu1 ul li {
+	float: left;
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #98E0AD;
+}
+
+#menu1 ul li a {
+	display: block;
+}
+
+#menu1 ul li a:hover{
+	background: #138535;
+	color: #fff;
 }

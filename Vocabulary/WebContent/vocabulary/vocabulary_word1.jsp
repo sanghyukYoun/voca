@@ -84,11 +84,19 @@
 	
 </header>
 
+<div id="menu1">
+	<ul>
+	<li><a href="vocabulary_word1.jsp">고교 영어1</a></li>
+	<li><a href="vocabulary_word2.jsp">고교 영어2</a></li>
+	<li><a href="vocabulary_list.jsp">단어장</a></li>
+	</ul>
+</div>
 	<div align=center>
+	<H2>고교 영어1</H2>
 		<HR>
 			<table border=1>
 				<tr>
-					<td colspan=7 align=center>고교 영어1</td>
+					<td colspan=7 align=center></td>
 				</tr>
 				<tr>
 					<th>단어</th>

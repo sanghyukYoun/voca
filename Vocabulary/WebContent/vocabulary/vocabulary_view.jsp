@@ -11,7 +11,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>단어장 등록</title>
 	<link rel="stylesheet" href="vocabulary.css" type="text/css" media="screen" />
-
 	<script type="text/javascript">
 
 		// window.load는 페이지 로딩 후 실행
@@ -92,6 +91,13 @@ input[type=button] {
 	</div>
 	
 </header>
+<div id="menu1">
+	<ul>
+	<li><a href="vocabulary_word1.jsp">고교 영어1</a></li>
+	<li><a href="vocabulary_word2.jsp">고교 영어2</a></li>
+	<li><a href="vocabulary_list.jsp">단어장</a></li>
+	</ul>
+</div>
 	<div align="center">
 	<H2>단어장 등록</H2>
 	<HR>
@@ -141,6 +147,7 @@ input[type=button] {
 		</table>
 	</form>
 	</div>
+	
 <div class="content">
 
 </div>
